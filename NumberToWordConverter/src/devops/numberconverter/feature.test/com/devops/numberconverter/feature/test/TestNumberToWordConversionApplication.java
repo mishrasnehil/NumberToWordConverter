@@ -41,6 +41,11 @@ private NumberToWordConversionApplication numberToWordConversionApplication;
 		String number = "!@#$";
 		assertEquals("Please enter the valid number","Please enter the valid number");
 	}
+	@Test
+    public void shouldexitForthousand(){
+		Integer number = 1000;
+		assertEquals("Number out of Range","Number out of Range");
+	}
 
 
 }
