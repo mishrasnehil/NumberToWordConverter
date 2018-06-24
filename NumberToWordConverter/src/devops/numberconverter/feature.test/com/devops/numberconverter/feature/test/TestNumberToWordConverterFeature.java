@@ -103,9 +103,24 @@ public class TestNumberToWordConverterFeature {
 	        Assert.assertEquals(expectedNumberAsWords, actualNumberAsWords);
 
 	    }
+	    
+	    @Test
+	    public void shouldConvertNumberToWordFor684(){
+	        //given
+
+	        Integer number = 684;
+	        String expectedNumberAsWords = "Six Hundred Eighty Four";
+	        //when
+	        String actualNumberAsWords = numberToWordConverterFeature.convertNumberToWords(number);
+
+	        //then
+	        Assert.assertEquals(expectedNumberAsWords, actualNumberAsWords);
+
+	    }
+
 
 	    @Test
-	    public void shouldConvertNumberToWordFor900(){
+	    public void shouldConvertNumberToWordFor999(){
 	        //given
 
 	        Integer number = 999;
